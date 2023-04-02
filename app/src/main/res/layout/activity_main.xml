@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_gradient">
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invoice Maker"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:fontFamily="casual" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/form_bg"
+        android:layout_margin="20dp"
+        android:padding="20dp">
+
+        <!--    NAME-->
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invoice To/Full Name"
+            />
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            />
+
+        <!--    PHONE NUMBER    -->
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            />
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_marginBottom="10dp"
+            android:layout_width="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            />
+
+        <!--    ADDRESS     -->
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            />
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            />
+
+        <!--    INVOICE DATE    -->
+
+        <TextView
+            android:id="@+id/invoiceDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invoice Date"
+            />
+        <EditText
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/invoiceDateEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            />
+
+        <!--    PRICE      -->
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            />
+        <EditText
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/priceEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+
+        <!--       BUTTON       -->
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make PDF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:cornerRadius="20dp"/>
+
+    </LinearLayout>
+</LinearLayout>

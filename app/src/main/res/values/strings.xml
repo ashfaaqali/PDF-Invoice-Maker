@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Invoice Maker</string>
+    <string name="permission_necessary">Permission Necessary</string>
+    <string name="storage_permission_is_encessary_to_wrote_event">storage_permission_is_encessary_to_wrote_event</string>
+</resources>
